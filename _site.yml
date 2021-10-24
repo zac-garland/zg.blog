@@ -18,5 +18,6 @@ favicon: assets/img/favicon.ico
 output:
   distill::distill_article:
     css: theme.css
-    highlight: rstudio
+    highlight: tango
+    highlight_downlit: false
     toc: true
