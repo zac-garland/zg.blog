@@ -1,12 +1,21 @@
 name: "zg.blog"
-title: "ZG Blog"
+title: ""
 description: |
   ZG Blog
 output_dir: "."
 navbar:
+  logo:
+    image: assets/img/zg_logo.svg
+    href: https://zacgarland.com/
+  search: true
+  source_url: true
   right:
     - text: "Home"
       href: index.html
     - text: "About"
       href: about.html
-output: distill::distill_article
+output:
+  distill::distill_article:
+    css: theme.css
+    highlight: rstudio
+    toc: true
