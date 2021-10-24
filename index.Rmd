@@ -3,6 +3,7 @@ title: "The Mountain Man Code Blog"
 description: |
   a few thoughts, a few lines of code
 site: distill::distill_website
+listing: posts
 ---
 
 ```{r setup, include=FALSE}

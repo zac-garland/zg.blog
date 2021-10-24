@@ -121,6 +121,15 @@ create_new_package <- function(package_name, ...) {
 ```
 
 
+# TODO: Financial Data
+
+```{r}
+# tidyquant
+# quantmod
+# 
+```
+
+
 
 # TODO: Modeling 
 ```{r}
