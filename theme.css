@@ -130,7 +130,7 @@ d-article {
 }
 
 d-byline a, d-article d-byline a {
-    color: var(--light-silver);
+    color: var(--black);
     text-decoration: none;
     border-bottom: none;
 }
@@ -141,7 +141,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 d-byline h3 {
-    color: var(--light-silver);
+    color: var(--black);
 
 }
 
@@ -152,17 +152,4 @@ d-article a{
 }
 
 
-code{
-  background: #4d4a4982;
-}
 
-
-d-article div.sourceCode {
-    background-color: black;
-}
-
-code.sourceCode {
-    white-space: pre;
-    position: relative;
-    background: none;
-}
