@@ -18,5 +18,20 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 
+# Structure
+
 # What is R?
+
+# Why should someone use it?
+
+# Show me the cool stuff
+
+
+
+
+# Resources
+
+The bible: [R for Data Science](https://r4ds.had.co.nz/)
+
+
 

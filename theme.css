@@ -139,3 +139,7 @@ d-byline h3 {
     color: var(--light-silver);
 
 }
+
+d-article a{
+  color: var(--blue) !important;
+}
