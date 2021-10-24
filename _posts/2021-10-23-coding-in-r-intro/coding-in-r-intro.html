@@ -89,7 +89,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_meta_tags-->
   <title>Coding in R {intro}</title>
   
-  <meta property="description" itemprop="description" content="An introduction to why I love coding in R"/>
+  <meta property="description" itemprop="description" content="An introduction to developing in R"/>
   
   
   <!--  https://schema.org/Article -->
@@ -100,19 +100,19 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
   <meta property="og:title" content="Coding in R {intro}"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="An introduction to why I love coding in R"/>
+  <meta property="og:description" content="An introduction to developing in R"/>
   <meta property="og:locale" content="en_US"/>
   
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
   <meta property="twitter:title" content="Coding in R {intro}"/>
-  <meta property="twitter:description" content="An introduction to why I love coding in R"/>
+  <meta property="twitter:description" content="An introduction to developing in R"/>
   
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","preview","output"]}},"value":[{"type":"character","attributes":{},"value":["Coding in R {intro}"]},{"type":"character","attributes":{},"value":["An introduction to why I love coding in R\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Zac Garland"]}]}]},{"type":"character","attributes":{},"value":["2021-10-23"]},{"type":"character","attributes":{},"value":["preview.png"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","theme"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"character","attributes":{},"value":["theme.css"]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","preview","output"]}},"value":[{"type":"character","attributes":{},"value":["Coding in R {intro}"]},{"type":"character","attributes":{},"value":["An introduction to developing in R\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Zac Garland"]}]}]},{"type":"character","attributes":{},"value":["2021-10-23"]},{"type":"character","attributes":{},"value":["preview.png"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","theme"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"character","attributes":{},"value":["theme.css"]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -1458,7 +1458,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Coding in R {intro}","description":"An introduction to why I love coding in R","authors":[{"author":"Zac Garland","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-10-23T00:00:00.000-06:00","citationText":"Garland, 2021"}
+{"title":"Coding in R {intro}","description":"An introduction to developing in R","authors":[{"author":"Zac Garland","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-10-23T00:00:00.000-06:00","citationText":"Garland, 2021"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1471,7 +1471,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <h1>Coding in R {intro}</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>An introduction to why I love coding in R</p></p>
+<p><p>An introduction to developing in R</p></p>
 </div>
 
 <div class="d-byline">
@@ -1481,15 +1481,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 
 <div class="d-article">
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>include_link</span> <span class='op'>&lt;-</span> <span class='kw'>function</span><span class='op'>(</span><span class='va'>href</span>,<span class='va'>alt</span> <span class='op'>=</span> <span class='st'>"link"</span><span class='op'>)</span><span class='op'>{</span>
-  <span class='fu'>shiny</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/htmltools/man/HTML.html'>HTML</a></span><span class='op'>(</span><span class='fu'>glue</span><span class='fu'>::</span><span class='fu'><a href='https://glue.tidyverse.org/reference/glue.html'>glue</a></span><span class='op'>(</span><span class='st'>"&lt;a href=\"{href}\" target=\"_blank\"&gt;{alt}&lt;/a&gt;"</span><span class='op'>)</span><span class='op'>)</span>
-  
-<span class='op'>}</span>
-</code></pre>
-</div>
-</div>
 <h1 id="getting-started">Getting Started</h1>
 <p>First things first, lets take care of a few housekeeping items (like getting you up and running).</p>
 <p>Recommended setup:</p>
@@ -1498,17 +1489,25 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <li><b>Install Rtools (windows):</b> <a href="https://cran.r-project.org/bin/windows/Rtools/history.html" target="_blank">link</a></li>
 <li><b>Install Devtools:</b> <a href="https://devtools.r-lib.org/" target="_blank">link</a></li>
 </ul>
-<p>To check that your environment is properly setup, run: <code>devtools::has_devel()</code>.</p>
+<p>To check that your environment is properly setup, run:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>devtools</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/pkgbuild/man/has_compiler.html'>has_devel</a></span><span class='op'>(</span><span class='op'>)</span>
+<span class='co'>#&gt; Your system is ready to build packages!</span>
 </code></pre>
 </div>
 </div>
-<h1 id="structure">Structure</h1>
-<h1 id="what-is-r">What is R?</h1>
-<h1 id="why-should-someone-use-it">Why should someone use it?</h1>
-<h1 id="show-me-the-cool-stuff">Show me the cool stuff</h1>
+<h1 id="todo-what-is-r">TODO: What is R?</h1>
+<h1 id="todo-pros-cons">TODO: Pros &amp; Cons</h1>
+<h1 id="todo-workflow-packages-scripts">TODO: Workflow (packages &amp; scripts)</h1>
+<h1 id="todo-data-viz">TODO: Data Viz</h1>
+<h1 id="todo-tibbles-data-frames">TODO: Tibbles (data frames)</h1>
+<h1 id="todo-tidy-data">TODO: Tidy Data</h1>
+<h1 id="todo-programming-iteration-functional-vs-oop">TODO: Programming (iteration, functional vs OOP)</h1>
+<h1 id="todo-modeling">TODO: Modeling</h1>
+<h1 id="todo-rmarkdown-driven-everything">TODO: Rmarkdown Driven Everything</h1>
+<h1 id="todo-shiny">TODO: Shiny</h1>
+<h1 id="todo-html-css-js">TODO: HTML, CSS, JS</h1>
 <h1 id="resources">Resources</h1>
 <p>The bible: <a href="https://r4ds.had.co.nz/">R for Data Science</a></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>

@@ -1,7 +1,7 @@
 ---
 title: "Coding in R {intro}"
 description: |
-  An introduction to why I love coding in R
+  An introduction to developing in R
 author:
   - name: Zac Garland
 date: 2021-10-23
@@ -17,7 +17,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE)
 ```
 
-```{r}
+```{r,include=FALSE}
 include_link <- function(href,alt = "link"){
   shiny::HTML(glue::glue("<a href=\"{href}\" target=\"_blank\">{alt}</a>"))
   
@@ -39,25 +39,35 @@ Recommended setup:
 
 
 
-To check that your environment is properly setup, run: `devtools::has_devel()`. 
+To check that your environment is properly setup, run: 
 
 ```{r}
 devtools::has_devel()
+#> Your system is ready to build packages!
 ```
 
 
+# TODO: What is R?
 
-# Structure
+# TODO: Pros & Cons
 
+# TODO: Workflow (packages & scripts)
 
+# TODO: Data Viz
 
+# TODO: Tibbles (data frames)
 
+# TODO: Tidy Data
 
-# What is R?
+# TODO: Programming (iteration, functional vs OOP)
 
-# Why should someone use it?
+# TODO: Modeling 
 
-# Show me the cool stuff
+# TODO: Rmarkdown Driven Everything
+
+# TODO: Shiny
+
+# TODO: HTML, CSS, JS
 
 
 
