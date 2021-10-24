@@ -146,3 +146,8 @@ d-byline h3 {
 d-article a{
   color: var(--blue) !important;
 }
+
+
+code{
+  background: #0c5355;
+}
