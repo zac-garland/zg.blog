@@ -1,0 +1,22 @@
+---
+title: "Coding in R {intro}"
+description: |
+  An introduction to why I love coding in R
+author:
+  - name: Zac Garland
+date: 2021-10-23
+preview: preview.png
+output:
+  distill::distill_article:
+    self_contained: false
+    theme: theme.css
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+# What is R?
+

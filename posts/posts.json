@@ -1,0 +1,19 @@
+[
+  {
+    "path": "posts/2021-10-23-coding-in-r-intro/",
+    "title": "Coding in R {intro}",
+    "description": "An introduction to why I love coding in R",
+    "author": [
+      {
+        "name": "Zac Garland",
+        "url": {}
+      }
+    ],
+    "date": "2021-10-23",
+    "categories": [],
+    "contents": "\r\nWhat is R?\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-10-23T21:23:54-06:00",
+    "input_file": {}
+  }
+]

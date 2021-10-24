@@ -27,6 +27,7 @@ html {
   --dark-silver: #746d75ff;
   --blue: #00d9c0ff;
   --green: #37ff8bff;
+  --orange: #FF652F;
 
 
   /*-- Main font sizes --*/
@@ -100,8 +101,8 @@ d-appendix {
 
 
 body{
-  background-color: #121212ff;
-  background: #121212ff;
+  background-color: #000000;
+  background: #000000;
   color: #ffffff;
 }
 
@@ -120,6 +121,16 @@ body{
 
 d-article {
     border-top: 1px solid #ffffff;
-
+    color: #ffffff;
 }
 
+d-byline a, d-article d-byline a {
+    color: var(--dark-silver);
+    text-decoration: none;
+    border-bottom: none;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+  color: var(--orange);
+}
