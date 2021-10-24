@@ -13,7 +13,7 @@
     "categories": [],
     "contents": "\r\nGetting Started\r\nInstall R, RStudio, Tidyverse: link\r\nInstall Rtools (windows): link\r\nCheck Prereqs: devtools::has_devel()\r\nStructure\r\nWhat is R?\r\nWhy should someone use it?\r\nShow me the cool stuff\r\nResources\r\nThe bible: R for Data Science\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2021-10-23T22:13:59-06:00",
+    "last_modified": "2021-10-23T22:19:04-06:00",
     "input_file": {}
   }
 ]
