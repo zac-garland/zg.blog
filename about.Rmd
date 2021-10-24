@@ -1,10 +1,18 @@
 ---
-title: "About this site"
+title: "Hi, I'm Zac!"
 description: |
-  Some additional details about the website
+  I like to code 😀
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r}
+shiny::HTML(
+  "<div><p>Professionally, I'm a data scientist @ Mastercard. i'm part of their economics institute & mainly focus on data science & web development. previously, I was a consultant at FactSet where I worked with investment managers on their quant workflows.</p>
+  <p>Outside of work, I'm a mountain man. I live in Evergreen, Colorado & can usually be found with my pup (winston) up a mountain, woodworking, or coding. I have a degree in finance & led a few non-profits during college. the most successful endeavor, <a href=\"https://youtu.be/48mSJeCulIk\" style=\"color:#2ebaae;\" target=\"_blank\">bears go bald</a>, raised over $60,000 for children's cancer research.</p>
+  <p>a sample of my work can be found <a href=\"https://zacgarland.com/equity-research/\" style=\"color:#2ebaae;\"> here</a>.feel free to <a href=\"https://zacgarland.com/contact\" style=\"color:#2ebaae;\">contact me</a> about equity research, data science, or future opportunities. </p></div>"
+)
 ```
 

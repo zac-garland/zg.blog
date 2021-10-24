@@ -113,3 +113,13 @@ body{
 }
 
 
+.l-text, .l-body {
+    grid-column: text;
+    color: white;
+}
+
+d-article {
+    border-top: 1px solid #ffffff;
+
+}
+
