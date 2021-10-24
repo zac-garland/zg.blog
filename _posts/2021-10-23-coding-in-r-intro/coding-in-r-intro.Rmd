@@ -19,8 +19,9 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # Getting Started
 
-[Install R, RStudio, Tidyverse](https://r4ds.had.co.nz/introduction.html#prerequisites)
-[Install R Tools](https://cran.r-project.org/bin/windows/Rtools/history.html)
+<b>Install R, RStudio, Tidyverse:</b> [link](https://r4ds.had.co.nz/introduction.html#prerequisites)
+
+<b>Install Rtools (windows):</b> [link](https://cran.r-project.org/bin/windows/Rtools/history.html)
 
 <b>Check Prereqs:</b> `devtools::has_devel()`
 
