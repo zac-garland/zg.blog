@@ -1,7 +1,7 @@
 name: "zg.blog"
-title: ""
+title: "the ⛰️ man blog"
 description: |
-  ZG Blog
+  The Mountain Man Code Blog
 output_dir: "."
 navbar:
   logo:
