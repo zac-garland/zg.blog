@@ -17,8 +17,18 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+# Getting Started
+
+[Install R, RStudio, Tidyverse](https://r4ds.had.co.nz/introduction.html#prerequisites)
+[Install R Tools](https://cran.r-project.org/bin/windows/Rtools/history.html)
+
+> Check Prereqs: `devtools::has_devel()`
 
 # Structure
+
+
+
+
 
 # What is R?
 
