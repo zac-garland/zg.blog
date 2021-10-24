@@ -49,26 +49,142 @@ devtools::has_devel()
 
 # TODO: What is R?
 
+> R is a language and environment for statistical computing and graphics.
+
+[R Project](https://www.r-project.org/about.html)
+
+
+
+
 # TODO: Pros & Cons
 
 # TODO: Workflow (packages & scripts)
+```{r}
+
+# usethis
+# gert
+# devtools
+# tidyverse
+
+create_new_package <- function(package_name, ...) {
+  r_proj_dir <- path.expand("~/r_projects")
+  if (!dir.exists(r_proj_dir)) dir.create(r_proj_dir)
+
+  package_name <- package_name %>% make.names()
+
+  usethis::create_tidy_package(file.path(r_proj_dir, package_name), ...)
+}
+
+
+
+
+
+
+
+
+```
+
+
 
 # TODO: Data Viz
+```{r}
+# ggplot2
+# plotly
+# highcharter
+# r2d3
+# others
+```
+
+
 
 # TODO: Tibbles (data frames)
 
+
+
 # TODO: Tidy Data
 
+```{r}
+
+# tidyr
+# dplyr
+# lubridate
+# 
+
+```
+
+
 # TODO: Programming (iteration, functional vs OOP)
+```{r}
+# purrr
+# furrr
+
+```
+
+
 
 # TODO: Modeling 
+```{r}
+# tidymodels
+# fable
+# forecast
+```
+
+
 
 # TODO: Rmarkdown Driven Everything
 
+```{r}
+# rmarkdown
+# flexdashboard
+# distill
+# blogdown
+# pkgdown
+
+```
+
+
 # TODO: Shiny
+
+```{r}
+# shiny
+# shinyWidgets
+# bslib
+```
+
 
 # TODO: HTML, CSS, JS
 
+```{r}
+# htmltools
+# shiny
+```
+
+
+# TODO: HTML Widgets
+```{r}
+# htmlwidgets
+# 
+```
+
+
+# TODO: Data Tables
+```{r}
+# kableExtra
+# reactable
+
+```
+
+
+# TODO: Geospatial
+
+```{r}
+# leaflet
+# highcharts.Maps
+# plotly
+# 
+
+
+```
 
 
 

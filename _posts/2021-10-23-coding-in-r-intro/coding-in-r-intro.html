@@ -1498,16 +1498,123 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 </div>
 <h1 id="todo-what-is-r">TODO: What is R?</h1>
+<blockquote>
+<p>R is a language and environment for statistical computing and graphics.</p>
+</blockquote>
+<p><a href="https://www.r-project.org/about.html">R Project</a></p>
 <h1 id="todo-pros-cons">TODO: Pros &amp; Cons</h1>
 <h1 id="todo-workflow-packages-scripts">TODO: Workflow (packages &amp; scripts)</h1>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># usethis</span>
+<span class='co'># gert</span>
+<span class='co'># devtools</span>
+<span class='co'># tidyverse</span>
+
+<span class='va'>create_new_package</span> <span class='op'>&lt;-</span> <span class='kw'>function</span><span class='op'>(</span><span class='va'>package_name</span>, <span class='va'>...</span><span class='op'>)</span> <span class='op'>{</span>
+  <span class='va'>r_proj_dir</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/path.expand.html'>path.expand</a></span><span class='op'>(</span><span class='st'>"~/r_projects"</span><span class='op'>)</span>
+  <span class='kw'>if</span> <span class='op'>(</span><span class='op'>!</span><span class='fu'><a href='https://rdrr.io/r/base/files2.html'>dir.exists</a></span><span class='op'>(</span><span class='va'>r_proj_dir</span><span class='op'>)</span><span class='op'>)</span> <span class='fu'><a href='https://rdrr.io/r/base/files2.html'>dir.create</a></span><span class='op'>(</span><span class='va'>r_proj_dir</span><span class='op'>)</span>
+
+  <span class='va'>package_name</span> <span class='op'>&lt;-</span> <span class='va'>package_name</span> <span class='op'>%&gt;%</span> <span class='fu'><a href='https://rdrr.io/r/base/make.names.html'>make.names</a></span><span class='op'>(</span><span class='op'>)</span>
+
+  <span class='fu'>usethis</span><span class='fu'>::</span><span class='fu'><a href='https://usethis.r-lib.org/reference/tidyverse.html'>create_tidy_package</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/file.path.html'>file.path</a></span><span class='op'>(</span><span class='va'>r_proj_dir</span>, <span class='va'>package_name</span><span class='op'>)</span>, <span class='va'>...</span><span class='op'>)</span>
+<span class='op'>}</span>
+</code></pre>
+</div>
+</div>
 <h1 id="todo-data-viz">TODO: Data Viz</h1>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># ggplot2</span>
+<span class='co'># plotly</span>
+<span class='co'># highcharter</span>
+<span class='co'># r2d3</span>
+<span class='co'># others</span>
+</code></pre>
+</div>
+</div>
 <h1 id="todo-tibbles-data-frames">TODO: Tibbles (data frames)</h1>
 <h1 id="todo-tidy-data">TODO: Tidy Data</h1>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># tidyr</span>
+<span class='co'># dplyr</span>
+<span class='co'># lubridate</span>
+<span class='co'># </span>
+</code></pre>
+</div>
+</div>
 <h1 id="todo-programming-iteration-functional-vs-oop">TODO: Programming (iteration, functional vs OOP)</h1>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># purrr</span>
+<span class='co'># furrr</span>
+</code></pre>
+</div>
+</div>
 <h1 id="todo-modeling">TODO: Modeling</h1>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># tidymodels</span>
+<span class='co'># fable</span>
+<span class='co'># forecast</span>
+</code></pre>
+</div>
+</div>
 <h1 id="todo-rmarkdown-driven-everything">TODO: Rmarkdown Driven Everything</h1>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># rmarkdown</span>
+<span class='co'># flexdashboard</span>
+<span class='co'># distill</span>
+<span class='co'># blogdown</span>
+<span class='co'># pkgdown</span>
+</code></pre>
+</div>
+</div>
 <h1 id="todo-shiny">TODO: Shiny</h1>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># shiny</span>
+<span class='co'># shinyWidgets</span>
+<span class='co'># bslib</span>
+</code></pre>
+</div>
+</div>
 <h1 id="todo-html-css-js">TODO: HTML, CSS, JS</h1>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># htmltools</span>
+<span class='co'># shiny</span>
+</code></pre>
+</div>
+</div>
+<h1 id="todo-html-widgets">TODO: HTML Widgets</h1>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># htmlwidgets</span>
+<span class='co'># </span>
+</code></pre>
+</div>
+</div>
+<h1 id="todo-data-tables">TODO: Data Tables</h1>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># kableExtra</span>
+<span class='co'># reactable</span>
+</code></pre>
+</div>
+</div>
+<h1 id="todo-geospatial">TODO: Geospatial</h1>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># leaflet</span>
+<span class='co'># highcharts.Maps</span>
+<span class='co'># plotly</span>
+<span class='co'># </span>
+</code></pre>
+</div>
+</div>
 <h1 id="resources">Resources</h1>
 <p>The bible: <a href="https://r4ds.had.co.nz/">R for Data Science</a></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
