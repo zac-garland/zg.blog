@@ -14,22 +14,26 @@ output:
 
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE)
 ```
 
 # Getting Started
 
-First things first, lets take care of a few housekeeping items (like getting you up and running).
+First things first, lets take care of a few housekeeping items (like getting you up and running). 
 
-To get up and running, I'd recommend following the below three steps:
+Recommended setup:
 
-<b>Install R, RStudio, Tidyverse:</b> [link](https://r4ds.had.co.nz/introduction.html#prerequisites)
+- <b>Install R, RStudio, Tidyverse:</b> [link](https://r4ds.had.co.nz/introduction.html#prerequisites)
+- <b>Install Rtools (windows):</b> [link](https://cran.r-project.org/bin/windows/Rtools/history.html)
+- <b>Install Devtools:</b> [link](https://devtools.r-lib.org/)
 
-<b>Install Rtools (windows):</b> [link](https://cran.r-project.org/bin/windows/Rtools/history.html)
+To check that your environment is properly setup, run: `devtools::has_devel()`. 
 
-<b>Install Devtools:</b> [link](https://devtools.r-lib.org/)
+```{r}
+devtools::has_devel()
+```
 
-<b>Check Prereqs:</b> `devtools::has_devel()`
+
 
 # Structure
 

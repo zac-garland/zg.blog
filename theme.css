@@ -30,6 +30,7 @@ html {
   --blue: #00d9c0ff;
   --green: #37ff8bff;
   --orange: #FF652F;
+  --white: #ffffff;
 
 
   /*-- Main font sizes --*/
@@ -105,9 +106,9 @@ d-appendix {
 
 
 body{
-  background-color: #171718;
-  background: #171718;
-  color: #ffffff;
+  background-color: var(--white);
+  background: var(--white);
+  color: var(--black);
 }
 
 
@@ -153,4 +154,15 @@ d-article a{
 
 code{
   background: #4d4a4982;
+}
+
+
+d-article div.sourceCode {
+    background-color: black;
+}
+
+code.sourceCode {
+    white-space: pre;
+    position: relative;
+    background: none;
 }

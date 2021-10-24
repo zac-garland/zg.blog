@@ -2089,6 +2089,7 @@ html {
   --blue: #00d9c0ff;
   --green: #37ff8bff;
   --orange: #FF652F;
+  --white: #ffffff;
 
 
   /*-- Main font sizes --*/
@@ -2164,9 +2165,9 @@ d-appendix {
 
 
 body{
-  background-color: #171718;
-  background: #171718;
-  color: #ffffff;
+  background-color: var(--white);
+  background: var(--white);
+  color: var(--black);
 }
 
 
@@ -2212,6 +2213,17 @@ d-article a{
 
 code{
   background: #4d4a4982;
+}
+
+
+d-article div.sourceCode {
+    background-color: black;
+}
+
+code.sourceCode {
+    white-space: pre;
+    position: relative;
+    background: none;
 }
 
 </style>
@@ -2266,11 +2278,19 @@ code{
 <div class="d-article">
 <h1 id="getting-started">Getting Started</h1>
 <p>First things first, lets take care of a few housekeeping items (like getting you up and running).</p>
-<p>To get up and running, I’d recommend following the below three steps:</p>
-<p><b>Install R, RStudio, Tidyverse:</b> <a href="https://r4ds.had.co.nz/introduction.html#prerequisites">link</a></p>
-<p><b>Install Rtools (windows):</b> <a href="https://cran.r-project.org/bin/windows/Rtools/history.html">link</a></p>
-<p><b>Install Devtools:</b> <a href="https://devtools.r-lib.org/">link</a></p>
-<p><b>Check Prereqs:</b> <code>devtools::has_devel()</code></p>
+<p>Recommended setup:</p>
+<ul>
+<li><b>Install R, RStudio, Tidyverse:</b> <a href="https://r4ds.had.co.nz/introduction.html#prerequisites">link</a></li>
+<li><b>Install Rtools (windows):</b> <a href="https://cran.r-project.org/bin/windows/Rtools/history.html">link</a></li>
+<li><b>Install Devtools:</b> <a href="https://devtools.r-lib.org/">link</a></li>
+</ul>
+<p>To check that your environment is properly setup, run: <code>devtools::has_devel()</code>.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>devtools</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/pkgbuild/man/has_compiler.html'>has_devel</a></span><span class='op'>(</span><span class='op'>)</span>
+</code></pre>
+</div>
+</div>
 <h1 id="structure">Structure</h1>
 <h1 id="what-is-r">What is R?</h1>
 <h1 id="why-should-someone-use-it">Why should someone use it?</h1>
