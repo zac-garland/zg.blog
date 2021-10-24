@@ -17,15 +17,27 @@ output:
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE)
 ```
 
+```{r}
+include_link <- function(href,alt = "link"){
+  shiny::HTML(glue::glue("<a href=\"{href}\" target=\"_blank\">{alt}</a>"))
+  
+}
+```
+
+
 # Getting Started
 
 First things first, lets take care of a few housekeeping items (like getting you up and running). 
 
 Recommended setup:
 
-- <b>Install R, RStudio, Tidyverse:</b> [link](https://r4ds.had.co.nz/introduction.html#prerequisites)
-- <b>Install Rtools (windows):</b> [link](https://cran.r-project.org/bin/windows/Rtools/history.html)
-- <b>Install Devtools:</b> [link](https://devtools.r-lib.org/)
+- <b>Install R, RStudio, Tidyverse:</b> `r include_link('https://r4ds.had.co.nz/introduction.html#prerequisites')`
+- <b>Install Rtools (windows):</b> `r include_link('https://cran.r-project.org/bin/windows/Rtools/history.html')`
+- <b>Install Devtools:</b> `r include_link('https://devtools.r-lib.org/')`
+
+ 
+
+
 
 To check that your environment is properly setup, run: `devtools::has_devel()`. 
 

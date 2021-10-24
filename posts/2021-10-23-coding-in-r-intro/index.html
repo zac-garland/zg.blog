@@ -2205,7 +2205,7 @@ d-byline h3 {
 }
 
 d-article a{
-  color: var(--blue) !important;
+  color: var(--orange) !important;
   text-decoration: underline;
   text-decoration-color: #ffffff;
 }
@@ -2263,13 +2263,22 @@ d-article a{
 </div>
 
 <div class="d-article">
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>include_link</span> <span class='op'>&lt;-</span> <span class='kw'>function</span><span class='op'>(</span><span class='va'>href</span>,<span class='va'>alt</span> <span class='op'>=</span> <span class='st'>"link"</span><span class='op'>)</span><span class='op'>{</span>
+  <span class='fu'>shiny</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/htmltools/man/HTML.html'>HTML</a></span><span class='op'>(</span><span class='fu'>glue</span><span class='fu'>::</span><span class='fu'><a href='https://glue.tidyverse.org/reference/glue.html'>glue</a></span><span class='op'>(</span><span class='st'>"&lt;a href=\"{href}\" target=\"_blank\"&gt;{alt}&lt;/a&gt;"</span><span class='op'>)</span><span class='op'>)</span>
+  
+<span class='op'>}</span>
+</code></pre>
+</div>
+</div>
 <h1 id="getting-started">Getting Started</h1>
 <p>First things first, lets take care of a few housekeeping items (like getting you up and running).</p>
 <p>Recommended setup:</p>
 <ul>
-<li><b>Install R, RStudio, Tidyverse:</b> <a href="https://r4ds.had.co.nz/introduction.html#prerequisites">link</a></li>
-<li><b>Install Rtools (windows):</b> <a href="https://cran.r-project.org/bin/windows/Rtools/history.html">link</a></li>
-<li><b>Install Devtools:</b> <a href="https://devtools.r-lib.org/">link</a></li>
+<li><b>Install R, RStudio, Tidyverse:</b> <a href="https://r4ds.had.co.nz/introduction.html#prerequisites" target="_blank">link</a></li>
+<li><b>Install Rtools (windows):</b> <a href="https://cran.r-project.org/bin/windows/Rtools/history.html" target="_blank">link</a></li>
+<li><b>Install Devtools:</b> <a href="https://devtools.r-lib.org/" target="_blank">link</a></li>
 </ul>
 <p>To check that your environment is properly setup, run: <code>devtools::has_devel()</code>.</p>
 <div class="layout-chunk" data-layout="l-body">

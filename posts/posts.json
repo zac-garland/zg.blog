@@ -11,9 +11,9 @@
     ],
     "date": "2021-10-23",
     "categories": [],
-    "contents": "\r\nGetting Started\r\nFirst things first, lets take care of a few housekeeping items (like getting you up and running).\r\nRecommended setup:\r\nInstall R, RStudio, Tidyverse: link\r\nInstall Rtools (windows): link\r\nInstall Devtools: link\r\nTo check that your environment is properly setup, run: devtools::has_devel().\r\n\r\n\r\ndevtools::has_devel()\r\n\r\n\r\n\r\nStructure\r\nWhat is R?\r\nWhy should someone use it?\r\nShow me the cool stuff\r\nResources\r\nThe bible: R for Data Science\r\n\r\n\r\n\r\n",
+    "contents": "\r\n\r\n\r\ninclude_link <- function(href,alt = \"link\"){\r\n  shiny::HTML(glue::glue(\"<a href=\\\"{href}\\\" target=\\\"_blank\\\">{alt}<\/a>\"))\r\n  \r\n}\r\n\r\n\r\n\r\nGetting Started\r\nFirst things first, lets take care of a few housekeeping items (like getting you up and running).\r\nRecommended setup:\r\nInstall R, RStudio, Tidyverse: link\r\nInstall Rtools (windows): link\r\nInstall Devtools: link\r\nTo check that your environment is properly setup, run: devtools::has_devel().\r\n\r\n\r\ndevtools::has_devel()\r\n\r\n\r\n\r\nStructure\r\nWhat is R?\r\nWhy should someone use it?\r\nShow me the cool stuff\r\nResources\r\nThe bible: R for Data Science\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2021-10-23T22:42:05-06:00",
+    "last_modified": "2021-10-23T23:04:06-06:00",
     "input_file": {}
   }
 ]

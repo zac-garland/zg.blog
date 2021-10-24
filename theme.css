@@ -146,7 +146,7 @@ d-byline h3 {
 }
 
 d-article a{
-  color: var(--blue) !important;
+  color: var(--orange) !important;
   text-decoration: underline;
   text-decoration-color: #ffffff;
 }
