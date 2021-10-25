@@ -1,5 +1,5 @@
 ---
-title: "Coding in R {intro}"
+title: "Coding in R {tidy-intro}"
 description: |
   An introduction to developing in R
 author:
@@ -8,6 +8,8 @@ date: 2021-10-23
 preview: preview.png
 output:
   distill::distill_article:
+    toc: true
+    toc_depth: 2
     self_contained: false
     theme: theme.css
 ---
@@ -25,181 +27,110 @@ include_link <- function(href,alt = "link"){
 ```
 
 
-# Getting Started
-
-First things first, lets take care of a few housekeeping items (like getting you up and running). 
-
-Recommended setup:
-
-- <b>Install R, RStudio, Tidyverse:</b> `r include_link('https://r4ds.had.co.nz/introduction.html#prerequisites')`
-- <b>Install Rtools (windows):</b> `r include_link('https://cran.r-project.org/bin/windows/Rtools/history.html')`
-- <b>Install Devtools:</b> `r include_link('https://devtools.r-lib.org/')`
-
- 
+```{r, include = FALSE}
+library(tidyverse)
+```
 
 
 
-To check that your environment is properly setup, run: 
+# What is R?
+
+
+### The technical definition: 
+
+From the [R Project](https://www.r-project.org/about.html)
+
+> R is a language and environment for statistical computing and graphics.
+
+
+### My definition:
+
+> R is an end-to-end data science language - rooted in statistics, data visualizations, and open education.
+
+
+# Why I Picked R
+
+Shortly after graduating, I worked for a fin-tech firm called FactSet. If you're not familiar, think of a well designed bloomberg. (dont worry, I like bloomberg too) 
+
+Shortly after our initial training, we had guest speakers who shared their stories & the vision for each business unit. After hearing from the quant group... I knew what I wanted to do; & I pursued it. 
+
+When we were assigned accounts, I was 😀. My clients had similar interests.
+
+> one day, I received a voicemail. "hi zac, I was wondering if you could help us analyze our portfolios cluster risk. give me a call back."
+
+<div class="callout">I had no idea what the hell cluster risk was.</div> But I wanted to find out. 
+
+# One google search
+
+<b>Q:</b> what is cluster risk? 
+
+<b>A:</b> ~something I could analyze in python or R. 
+
+
+For the next 6 months, I wrote code from 7-midnight. Most of it was... terrible. But I was hooked & I loved it. Eventually, I decided it was something I wanted to do full time. 
+
+I left San Francisco, moved to a mountain town of 500 (spending most* of my life savings), and wrote the <a href="https://zacgarland.com/equity-research/" target="_blank">capstone</a> I had been thinking about for a year. 
+
+
+
+I took the view - either it turns into a business, or it's proof of learning. 
+
+> either way, it was something I had to do. 
+
+
+# a few years later
+
+A few years later, I'd like to share some of the knowledge I've gained from both personal & professional experience. 
+
+- First - with the R community <b>that_gave_me_everything # :)</b>
+- Second - with my team at Mastercard <b>#eitools</b>
+
+> In the grand scheme of things, <b>I know; I know nothing</b> - which is ironically, the best part. As I learn, I'll do my best to share. 
+
+# BUT
+
+The first book you should read, understand, and utilize is [R for Data Science](https://r4ds.had.co.nz/data-visualisation.html#data-visualisation)
+
+Start with the [Pre-Requisites](https://r4ds.had.co.nz/introduction.html#prerequisites) 
+
+Then read r4ds cover to cover. do all of the exercises.
+
+# THEN
+
+Then, check out my posts when you have time.
+
+<hr>
+<hr>
+
+To check that your environment is properly setup to read the rest of my blog posts, please run:
+
 
 ```{r}
 devtools::has_devel()
+
 #> Your system is ready to build packages!
 ```
 
 
-# TODO: What is R?
 
-> R is a language and environment for statistical computing and graphics.
-
-[R Project](https://www.r-project.org/about.html)
+# My Blog Post Plan:
 
 
 
 
-# TODO: Pros & Cons
+```{r, code_folding}
+zg_blog_pm <- readr::read_csv(here::here("data/blog_post_pm.csv")) %>% 
+  as.data.frame()
 
-# TODO: Workflow (packages & scripts)
-```{r}
-
-# usethis
-# gert
-# devtools
-# tidyverse
-
-create_new_package <- function(package_name, ...) {
-  r_proj_dir <- path.expand("~/r_projects")
-  if (!dir.exists(r_proj_dir)) dir.create(r_proj_dir)
-
-  package_name <- package_name %>% make.names()
-
-  usethis::create_tidy_package(file.path(r_proj_dir, package_name), ...)
-}
-
-
-
-
-
-
+collapsibleTree::collapsibleTreeSummary(
+  zg_blog_pm,
+  hierarchy = c("group", "package"),
+  collapsed = FALSE,
+  height = "1000px",
+  zoom = FALSE,
+  fontSize = 14
+)
 
 
 ```
-
-
-
-# TODO: Data Viz
-```{r}
-# ggplot2
-# plotly
-# highcharter
-# r2d3
-# others
-```
-
-
-
-# TODO: Tibbles (data frames)
-
-
-
-# TODO: Tidy Data
-
-```{r}
-
-# tidyr
-# dplyr
-# lubridate
-# 
-
-```
-
-
-# TODO: Programming (iteration, functional vs OOP)
-```{r}
-# purrr
-# furrr
-
-```
-
-
-# TODO: Financial Data
-
-```{r}
-# tidyquant
-# quantmod
-# 
-```
-
-
-
-# TODO: Modeling 
-```{r}
-# tidymodels
-# fable
-# forecast
-```
-
-
-
-# TODO: Rmarkdown Driven Everything
-
-```{r}
-# rmarkdown
-# flexdashboard
-# distill
-# blogdown
-# pkgdown
-
-```
-
-
-# TODO: Shiny
-
-```{r}
-# shiny
-# shinyWidgets
-# bslib
-```
-
-
-# TODO: HTML, CSS, JS
-
-```{r}
-# htmltools
-# shiny
-```
-
-
-# TODO: HTML Widgets
-```{r}
-# htmlwidgets
-# 
-```
-
-
-# TODO: Data Tables
-```{r}
-# kableExtra
-# reactable
-
-```
-
-
-# TODO: Geospatial
-
-```{r}
-# leaflet
-# highcharts.Maps
-# plotly
-# 
-
-
-```
-
-
-
-# Resources
-
-The bible: [R for Data Science](https://r4ds.had.co.nz/)
-
-
 

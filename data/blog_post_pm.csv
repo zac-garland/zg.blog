@@ -1,0 +1,40 @@
+group,package
+Workflow (packages & scripts),usethis
+Workflow (packages & scripts),gert
+Workflow (packages & scripts),devtools
+Workflow (packages & scripts),tidyverse
+Data Viz,ggplot2
+Data Viz,plotly
+Data Viz,highcharter
+Data Viz,r2d3
+Data Viz,others
+Tidy Data,tidyr
+Tidy Data,dplyr
+Tidy Data,lubridate
+Tidy Data,
+"Programming (iteration, functional vs OOP)",purrr
+"Programming (iteration, functional vs OOP)",furrr
+Financial Data,tidyquant
+Financial Data,quantmod
+Financial Data,
+Modeling,tidymodels
+Modeling,fable
+Modeling,forecast
+Rmarkdown Driven Everything,rmarkdown
+Rmarkdown Driven Everything,flexdashboard
+Rmarkdown Driven Everything,distill
+Rmarkdown Driven Everything,blogdown
+Rmarkdown Driven Everything,pkgdown
+Shiny,shiny
+Shiny,shinyWidgets
+Shiny,bslib
+"HTML, CSS, JS",htmltools
+"HTML, CSS, JS",shiny
+"HTML, CSS, JS",htmlwidgets
+"HTML, CSS, JS",
+Data Tables,kableExtra
+Data Tables,reactable
+Geospatial,leaflet
+Geospatial,highcharts.Maps
+Geospatial,plotly
+Geospatial,

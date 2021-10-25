@@ -137,7 +137,7 @@ d-byline a, d-article d-byline a {
 
 
 h1,h2,h3,h4,h5,h6{
-  color: var(--dark-silver);
+  color: var(--black);
 }
 
 d-byline h3 {
@@ -151,5 +151,57 @@ d-article a{
   text-decoration-color: #ffffff;
 }
 
+d-article div.sourceCode {
+    background-color: var(--black);
+}
+
+code span.co {
+    color: #9933CC;
+}
+
+code span.va {
+    color: #ffffff;
+}
+
+code span.fu {
+    color: var(--white);
+}
+
+d-article div.sourceCode code, d-article pre code {
+
+    color: white;
+}
+
+code span.op {
+    color: var(--dark-silver);
+}
+
+code span.cn {
+    color: var(--dark-silver);
+}
 
 
+code span.kw {
+    color: var(--blue);
+}
+
+
+code span.st {
+    color: var(--green);
+}
+
+d-article pre, d-article div.sourceCode, d-article div.sourceCode pre {
+    overflow: auto !important;
+}
+
+.kw a, .fu a {
+    text-decoration: none;
+}
+
+
+
+.callout {
+    color: var(--dark-silver);
+    font-size: 2em;
+    margin-bottom: 25px;
+}

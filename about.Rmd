@@ -1,7 +1,7 @@
 ---
 title: "Hi, I'm Zac!"
 description: |
-  I like to code 😀
+  I like to cook, code, hike, listen to music, woodwork, and my dog winston is a spitting image.  
 ---
 
 ```{r setup, include=FALSE}

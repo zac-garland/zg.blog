@@ -87,7 +87,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-<title>⛰️ the mountain man code blog ⛰️: Coding in R {intro}</title>
+<title>⛰️ the mountain man code blog ⛰️: Coding in R {tidy-intro}</title>
 
 <meta property="description" itemprop="description" content="An introduction to developing in R"/>
 
@@ -99,7 +99,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <meta name="article:author" content="Zac Garland"/>
 
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-<meta property="og:title" content="⛰️ the mountain man code blog ⛰️: Coding in R {intro}"/>
+<meta property="og:title" content="⛰️ the mountain man code blog ⛰️: Coding in R {tidy-intro}"/>
 <meta property="og:type" content="article"/>
 <meta property="og:description" content="An introduction to developing in R"/>
 <meta property="og:locale" content="en_US"/>
@@ -107,19 +107,19 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 <!--  https://dev.twitter.com/cards/types/summary -->
 <meta property="twitter:card" content="summary"/>
-<meta property="twitter:title" content="⛰️ the mountain man code blog ⛰️: Coding in R {intro}"/>
+<meta property="twitter:title" content="⛰️ the mountain man code blog ⛰️: Coding in R {tidy-intro}"/>
 <meta property="twitter:description" content="An introduction to developing in R"/>
 
 <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","preview","output"]}},"value":[{"type":"character","attributes":{},"value":["Coding in R {intro}"]},{"type":"character","attributes":{},"value":["An introduction to developing in R"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Zac Garland"]}]}]},{"type":"character","attributes":{},"value":["2021-10-23"]},{"type":"character","attributes":{},"value":["preview.png"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","theme"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"character","attributes":{},"value":["theme.css"]}]}]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","preview","output"]}},"value":[{"type":"character","attributes":{},"value":["Coding in R {tidy-intro}"]},{"type":"character","attributes":{},"value":["An introduction to developing in R"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Zac Garland"]}]}]},{"type":"character","attributes":{},"value":["2021-10-23"]},{"type":"character","attributes":{},"value":["preview.png"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_depth","self_contained","theme"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]},{"type":"logical","attributes":{},"value":[false]},{"type":"character","attributes":{},"value":["theme.css"]}]}]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["coding-in-r-intro_files/anchor-4.2.2/anchor.min.js","coding-in-r-intro_files/bowser-1.9.3/bowser.min.js","coding-in-r-intro_files/distill-2.2.21/template.v2.js","coding-in-r-intro_files/jquery-3.6.0/jquery-3.6.0.js","coding-in-r-intro_files/jquery-3.6.0/jquery-3.6.0.min.js","coding-in-r-intro_files/jquery-3.6.0/jquery-3.6.0.min.map","coding-in-r-intro_files/popper-2.6.0/popper.min.js","coding-in-r-intro_files/tippy-6.2.7/tippy-bundle.umd.min.js","coding-in-r-intro_files/tippy-6.2.7/tippy-light-border.css","coding-in-r-intro_files/tippy-6.2.7/tippy.css","coding-in-r-intro_files/tippy-6.2.7/tippy.umd.min.js","coding-in-r-intro_files/webcomponents-2.0.0/webcomponents.js","preview.png"]}
+  {"type":"character","attributes":{},"value":["coding-in-r-intro_files/anchor-4.2.2/anchor.min.js","coding-in-r-intro_files/bowser-1.9.3/bowser.min.js","coding-in-r-intro_files/collapsibleTree-0.1.6/collapsibleTree.css","coding-in-r-intro_files/collapsibleTree-0.1.6/d3-4.10.2/d3.min.js","coding-in-r-intro_files/collapsibleTree-0.1.6/d3-4.10.2/LICENSE","coding-in-r-intro_files/collapsibleTree-binding-0.1.7/collapsibleTree.js","coding-in-r-intro_files/d3-4.10.2/d3.min.js","coding-in-r-intro_files/d3-4.10.2/LICENSE","coding-in-r-intro_files/distill-2.2.21/template.v2.js","coding-in-r-intro_files/htmlwidgets-1.5.3/htmlwidgets.js","coding-in-r-intro_files/jquery-3.6.0/jquery-3.6.0.js","coding-in-r-intro_files/jquery-3.6.0/jquery-3.6.0.min.js","coding-in-r-intro_files/jquery-3.6.0/jquery-3.6.0.min.map","coding-in-r-intro_files/popper-2.6.0/popper.min.js","coding-in-r-intro_files/tippy-6.2.7/tippy-bundle.umd.min.js","coding-in-r-intro_files/tippy-6.2.7/tippy-light-border.css","coding-in-r-intro_files/tippy-6.2.7/tippy.css","coding-in-r-intro_files/tippy-6.2.7/tippy.umd.min.js","coding-in-r-intro_files/webcomponents-2.0.0/webcomponents.js","has_devel.png","preview.png"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2046,6 +2046,10 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <!--/radix_placeholder_distill-->
+  <script src="../../site_libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+  <script src="../../site_libs/d3-4.10.2/d3.min.js"></script>
+  <link href="../../site_libs/collapsibleTree-0.1.6/collapsibleTree.css" rel="stylesheet" />
+  <script src="../../site_libs/collapsibleTree-binding-0.1.7/collapsibleTree.js"></script>
   <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -2196,7 +2200,7 @@ d-byline a, d-article d-byline a {
 
 
 h1,h2,h3,h4,h5,h6{
-  color: var(--dark-silver);
+  color: var(--black);
 }
 
 d-byline h3 {
@@ -2210,8 +2214,60 @@ d-article a{
   text-decoration-color: #ffffff;
 }
 
+d-article div.sourceCode {
+    background-color: var(--black);
+}
+
+code span.co {
+    color: #9933CC;
+}
+
+code span.va {
+    color: #ffffff;
+}
+
+code span.fu {
+    color: var(--white);
+}
+
+d-article div.sourceCode code, d-article pre code {
+
+    color: white;
+}
+
+code span.op {
+    color: var(--dark-silver);
+}
+
+code span.cn {
+    color: var(--dark-silver);
+}
 
 
+code span.kw {
+    color: var(--blue);
+}
+
+
+code span.st {
+    color: var(--green);
+}
+
+d-article pre, d-article div.sourceCode, d-article div.sourceCode pre {
+    overflow: auto !important;
+}
+
+.kw a, .fu a {
+    text-decoration: none;
+}
+
+
+
+.callout {
+    color: var(--dark-silver);
+    font-size: 2em;
+    margin-bottom: 25px;
+}
 
 </style>
 <!--/radix_placeholder_site_in_header-->
@@ -2224,7 +2280,7 @@ d-article a{
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Coding in R {intro}","description":"An introduction to developing in R","authors":[{"author":"Zac Garland","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-10-23T00:00:00.000-06:00","citationText":"Garland, 2021"}
+{"title":"Coding in R {tidy-intro}","description":"An introduction to developing in R","authors":[{"author":"Zac Garland","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-10-23T00:00:00.000-06:00","citationText":"Garland, 2021"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2250,7 +2306,7 @@ d-article a{
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Coding in R {intro}</h1>
+<h1>Coding in R {tidy-intro}</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
 <p><p>An introduction to developing in R</p></p>
@@ -2263,151 +2319,95 @@ d-article a{
 </div>
 
 <div class="d-article">
-<h1 id="getting-started">Getting Started</h1>
-<p>First things first, lets take care of a few housekeeping items (like getting you up and running).</p>
-<p>Recommended setup:</p>
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="TOC">
+<h3>Contents</h3>
 <ul>
-<li><b>Install R, RStudio, Tidyverse:</b> <a href="https://r4ds.had.co.nz/introduction.html#prerequisites" target="_blank">link</a></li>
-<li><b>Install Rtools (windows):</b> <a href="https://cran.r-project.org/bin/windows/Rtools/history.html" target="_blank">link</a></li>
-<li><b>Install Devtools:</b> <a href="https://devtools.r-lib.org/" target="_blank">link</a></li>
+<li><a href="#what-is-r">What is R?</a></li>
+<li><a href="#why-i-picked-r">Why I Picked R</a></li>
+<li><a href="#one-google-search">One google search</a></li>
+<li><a href="#a-few-years-later">a few years later</a></li>
+<li><a href="#but">BUT</a></li>
+<li><a href="#then">THEN</a></li>
+<li><a href="#my-blog-post-plan">My Blog Post Plan:</a></li>
 </ul>
-<p>To check that your environment is properly setup, run:</p>
+</nav>
+</div>
+<h1 id="what-is-r">What is R?</h1>
+<h3 id="the-technical-definition">The technical definition:</h3>
+<p>From the <a href="https://www.r-project.org/about.html">R Project</a></p>
+<blockquote>
+<p>R is a language and environment for statistical computing and graphics.</p>
+</blockquote>
+<h3 id="my-definition">My definition:</h3>
+<blockquote>
+<p>R is an end-to-end data science language - rooted in statistics, data visualizations, and open education.</p>
+</blockquote>
+<h1 id="why-i-picked-r">Why I Picked R</h1>
+<p>Shortly after graduating, I worked for a fin-tech firm called FactSet. If you’re not familiar, think of a well designed bloomberg. (dont worry, I like bloomberg too)</p>
+<p>Shortly after our initial training, we had guest speakers who shared their stories &amp; the vision for each business unit. After hearing from the quant group… I knew what I wanted to do; &amp; I pursued it.</p>
+<p>When we were assigned accounts, I was 😀. My clients had similar interests.</p>
+<blockquote>
+<p>one day, I received a voicemail. “hi zac, I was wondering if you could help us analyze our portfolios cluster risk. give me a call back.”</p>
+</blockquote>
+<div class="callout">
+I had no idea what the hell cluster risk was.
+</div>
+<p>But I wanted to find out.</p>
+<h1 id="one-google-search">One google search</h1>
+<p><b>Q:</b> what is cluster risk?</p>
+<p><b>A:</b> ~something I could analyze in python or R.</p>
+<p>For the next 6 months, I wrote code from 7-midnight. Most of it was… terrible. But I was hooked &amp; I loved it. Eventually, I decided it was something I wanted to do full time.</p>
+<p>I left San Francisco, moved to a mountain town of 500 (spending most* of my life savings), and wrote the <a href="https://zacgarland.com/equity-research/" target="_blank">capstone</a> I had been thinking about for a year.</p>
+<p>I took the view - either it turns into a business, or it’s proof of learning.</p>
+<blockquote>
+<p>either way, it was something I had to do.</p>
+</blockquote>
+<h1 id="a-few-years-later">a few years later</h1>
+<p>A few years later, I’d like to share some of the knowledge I’ve gained from both personal &amp; professional experience.</p>
+<ul>
+<li>First - with the R community <b>that_gave_me_everything # :)</b></li>
+<li>Second - with my team at Mastercard <b>#eitools</b></li>
+</ul>
+<blockquote>
+<p>In the grand scheme of things, <b>I know; I know nothing</b> - which is ironically, the best part. As I learn, I’ll do my best to share.</p>
+</blockquote>
+<h1 id="but">BUT</h1>
+<p>The first book you should read, understand, and utilize is <a href="https://r4ds.had.co.nz/data-visualisation.html#data-visualisation">R for Data Science</a></p>
+<p>Start with the <a href="https://r4ds.had.co.nz/introduction.html#prerequisites">Pre-Requisites</a></p>
+<p>Then read r4ds cover to cover. do all of the exercises.</p>
+<h1 id="then">THEN</h1>
+<p>Then, check out my posts when you have time.</p>
+<hr>
+<hr>
+<p>To check that your environment is properly setup to read the rest of my blog posts, please run:</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class='fu'>devtools</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/pkgbuild/man/has_compiler.html'>has_devel</a></span><span class='op'>(</span><span class='op'>)</span>
+
 <span class='co'>#&gt; Your system is ready to build packages!</span>
 </code></pre>
 </div>
 </div>
-<h1 id="todo-what-is-r">TODO: What is R?</h1>
-<blockquote>
-<p>R is a language and environment for statistical computing and graphics.</p>
-</blockquote>
-<p><a href="https://www.r-project.org/about.html">R Project</a></p>
-<h1 id="todo-pros-cons">TODO: Pros &amp; Cons</h1>
-<h1 id="todo-workflow-packages-scripts">TODO: Workflow (packages &amp; scripts)</h1>
+<h1 id="my-blog-post-plan">My Blog Post Plan:</h1>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># usethis</span>
-<span class='co'># gert</span>
-<span class='co'># devtools</span>
-<span class='co'># tidyverse</span>
+<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>zg_blog_pm</span> <span class='op'>&lt;-</span> <span class='fu'>readr</span><span class='fu'>::</span><span class='fu'><a href='https://readr.tidyverse.org/reference/read_delim.html'>read_csv</a></span><span class='op'>(</span><span class='fu'>here</span><span class='fu'>::</span><span class='fu'><a href='https://here.r-lib.org//reference/here.html'>here</a></span><span class='op'>(</span><span class='st'>"data/blog_post_pm.csv"</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>%&gt;%</span> 
+  <span class='fu'><a href='https://rdrr.io/r/base/as.data.frame.html'>as.data.frame</a></span><span class='op'>(</span><span class='op'>)</span>
 
-<span class='va'>create_new_package</span> <span class='op'>&lt;-</span> <span class='kw'>function</span><span class='op'>(</span><span class='va'>package_name</span>, <span class='va'>...</span><span class='op'>)</span> <span class='op'>{</span>
-  <span class='va'>r_proj_dir</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/path.expand.html'>path.expand</a></span><span class='op'>(</span><span class='st'>"~/r_projects"</span><span class='op'>)</span>
-  <span class='kw'>if</span> <span class='op'>(</span><span class='op'>!</span><span class='fu'><a href='https://rdrr.io/r/base/files2.html'>dir.exists</a></span><span class='op'>(</span><span class='va'>r_proj_dir</span><span class='op'>)</span><span class='op'>)</span> <span class='fu'><a href='https://rdrr.io/r/base/files2.html'>dir.create</a></span><span class='op'>(</span><span class='va'>r_proj_dir</span><span class='op'>)</span>
-
-  <span class='va'>package_name</span> <span class='op'>&lt;-</span> <span class='va'>package_name</span> <span class='op'>%&gt;%</span> <span class='fu'><a href='https://rdrr.io/r/base/make.names.html'>make.names</a></span><span class='op'>(</span><span class='op'>)</span>
-
-  <span class='fu'>usethis</span><span class='fu'>::</span><span class='fu'><a href='https://usethis.r-lib.org/reference/tidyverse.html'>create_tidy_package</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/file.path.html'>file.path</a></span><span class='op'>(</span><span class='va'>r_proj_dir</span>, <span class='va'>package_name</span><span class='op'>)</span>, <span class='va'>...</span><span class='op'>)</span>
-<span class='op'>}</span>
+<span class='fu'>collapsibleTree</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/collapsibleTree/man/collapsibleTreeSummary.html'>collapsibleTreeSummary</a></span><span class='op'>(</span>
+  <span class='va'>zg_blog_pm</span>,
+  hierarchy <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"group"</span>, <span class='st'>"package"</span><span class='op'>)</span>,
+  collapsed <span class='op'>=</span> <span class='cn'>FALSE</span>,
+  height <span class='op'>=</span> <span class='st'>"1000px"</span>,
+  zoom <span class='op'>=</span> <span class='cn'>FALSE</span>,
+  fontSize <span class='op'>=</span> <span class='fl'>14</span>
+<span class='op'>)</span>
 </code></pre>
 </div>
+<div id="htmlwidget-f1be1cbb74eea7bc5ce7" style="width:624px;height:1000px;" class="collapsibleTree html-widget"></div>
+<script type="application/json" data-for="htmlwidget-f1be1cbb74eea7bc5ce7">{"x":{"data":{"name":"zg_blog_pm","fill":"#D33F6A","WeightOfNode":"35","children":[{"name":"Data Viz","fill":"#E78C36","WeightOfNode":"5","children":[{"name":"ggplot2","fill":"#DD6157","WeightOfNode":"1"},{"name":"plotly","fill":"#DD6157","WeightOfNode":"1"},{"name":"highcharter","fill":"#DD6157","WeightOfNode":"1"},{"name":"r2d3","fill":"#DD6157","WeightOfNode":"1"},{"name":"others","fill":"#DD6157","WeightOfNode":"1"}]},{"name":"Rmarkdown Driven Everything","fill":"#E78C36","WeightOfNode":"5","children":[{"name":"rmarkdown","fill":"#DD6157","WeightOfNode":"1"},{"name":"flexdashboard","fill":"#DD6157","WeightOfNode":"1"},{"name":"distill","fill":"#DD6157","WeightOfNode":"1"},{"name":"blogdown","fill":"#DD6157","WeightOfNode":"1"},{"name":"pkgdown","fill":"#DD6157","WeightOfNode":"1"}]},{"name":"Workflow (packages & scripts)","fill":"#E9A129","WeightOfNode":"4","children":[{"name":"usethis","fill":"#D33F6A","WeightOfNode":"1"},{"name":"gert","fill":"#D33F6A","WeightOfNode":"1"},{"name":"devtools","fill":"#D33F6A","WeightOfNode":"1"},{"name":"tidyverse","fill":"#D33F6A","WeightOfNode":"1"}]},{"name":"Tidy Data","fill":"#EAAF29","WeightOfNode":"3","children":[{"name":"tidyr","fill":"#D33F6A","WeightOfNode":"1"},{"name":"dplyr","fill":"#D33F6A","WeightOfNode":"1"},{"name":"lubridate","fill":"#D33F6A","WeightOfNode":"1"}]},{"name":"Modeling","fill":"#EAAF29","WeightOfNode":"3","children":[{"name":"tidymodels","fill":"#D33F6A","WeightOfNode":"1"},{"name":"fable","fill":"#D33F6A","WeightOfNode":"1"},{"name":"forecast","fill":"#D33F6A","WeightOfNode":"1"}]},{"name":"Shiny","fill":"#EAAF29","WeightOfNode":"3","children":[{"name":"shiny","fill":"#D33F6A","WeightOfNode":"1"},{"name":"shinyWidgets","fill":"#D33F6A","WeightOfNode":"1"},{"name":"bslib","fill":"#D33F6A","WeightOfNode":"1"}]},{"name":"HTML, CSS, JS","fill":"#EAAF29","WeightOfNode":"3","children":[{"name":"htmltools","fill":"#D33F6A","WeightOfNode":"1"},{"name":"shiny","fill":"#D33F6A","WeightOfNode":"1"},{"name":"htmlwidgets","fill":"#D33F6A","WeightOfNode":"1"}]},{"name":"Geospatial","fill":"#EAAF29","WeightOfNode":"3","children":[{"name":"leaflet","fill":"#D33F6A","WeightOfNode":"1"},{"name":"highcharts.Maps","fill":"#D33F6A","WeightOfNode":"1"},{"name":"plotly","fill":"#D33F6A","WeightOfNode":"1"}]},{"name":"Programming (iteration, functional vs OOP)","fill":"#E8C33C","WeightOfNode":"2","children":[{"name":"purrr","fill":"#D33F6A","WeightOfNode":"1"},{"name":"furrr","fill":"#D33F6A","WeightOfNode":"1"}]},{"name":"Financial Data","fill":"#E8C33C","WeightOfNode":"2","children":[{"name":"tidyquant","fill":"#D33F6A","WeightOfNode":"1"},{"name":"quantmod","fill":"#D33F6A","WeightOfNode":"1"}]},{"name":"Data Tables","fill":"#E8C33C","WeightOfNode":"2","children":[{"name":"kableExtra","fill":"#D33F6A","WeightOfNode":"1"},{"name":"reactable","fill":"#D33F6A","WeightOfNode":"1"}]}]},"options":{"hierarchy":["group","package"],"input":null,"attribute":"leafCount","linkLength":null,"fontSize":14,"tooltip":true,"collapsed":false,"zoomable":false,"margin":{"top":20,"bottom":20,"left":95,"right":130}}},"evals":[],"jsHooks":[]}</script>
 </div>
-<h1 id="todo-data-viz">TODO: Data Viz</h1>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># ggplot2</span>
-<span class='co'># plotly</span>
-<span class='co'># highcharter</span>
-<span class='co'># r2d3</span>
-<span class='co'># others</span>
-</code></pre>
-</div>
-</div>
-<h1 id="todo-tibbles-data-frames">TODO: Tibbles (data frames)</h1>
-<h1 id="todo-tidy-data">TODO: Tidy Data</h1>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># tidyr</span>
-<span class='co'># dplyr</span>
-<span class='co'># lubridate</span>
-<span class='co'># </span>
-</code></pre>
-</div>
-</div>
-<h1 id="todo-programming-iteration-functional-vs-oop">TODO: Programming (iteration, functional vs OOP)</h1>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># purrr</span>
-<span class='co'># furrr</span>
-</code></pre>
-</div>
-</div>
-<h1 id="todo-financial-data">TODO: Financial Data</h1>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># tidyquant</span>
-<span class='co'># quantmod</span>
-<span class='co'># </span>
-</code></pre>
-</div>
-</div>
-<h1 id="todo-modeling">TODO: Modeling</h1>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># tidymodels</span>
-<span class='co'># fable</span>
-<span class='co'># forecast</span>
-</code></pre>
-</div>
-</div>
-<h1 id="todo-rmarkdown-driven-everything">TODO: Rmarkdown Driven Everything</h1>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># rmarkdown</span>
-<span class='co'># flexdashboard</span>
-<span class='co'># distill</span>
-<span class='co'># blogdown</span>
-<span class='co'># pkgdown</span>
-</code></pre>
-</div>
-</div>
-<h1 id="todo-shiny">TODO: Shiny</h1>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># shiny</span>
-<span class='co'># shinyWidgets</span>
-<span class='co'># bslib</span>
-</code></pre>
-</div>
-</div>
-<h1 id="todo-html-css-js">TODO: HTML, CSS, JS</h1>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># htmltools</span>
-<span class='co'># shiny</span>
-</code></pre>
-</div>
-</div>
-<h1 id="todo-html-widgets">TODO: HTML Widgets</h1>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># htmlwidgets</span>
-<span class='co'># </span>
-</code></pre>
-</div>
-</div>
-<h1 id="todo-data-tables">TODO: Data Tables</h1>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># kableExtra</span>
-<span class='co'># reactable</span>
-</code></pre>
-</div>
-</div>
-<h1 id="todo-geospatial">TODO: Geospatial</h1>
-<div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># leaflet</span>
-<span class='co'># highcharts.Maps</span>
-<span class='co'># plotly</span>
-<span class='co'># </span>
-</code></pre>
-</div>
-</div>
-<h1 id="resources">Resources</h1>
-<p>The bible: <a href="https://r4ds.had.co.nz/">R for Data Science</a></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

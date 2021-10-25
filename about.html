@@ -18,12 +18,78 @@
  <!--radix_placeholder_import_source-->
  <!--/radix_placeholder_import_source-->
 
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ad0000; } /* Alert */
+code span.an { color: #5e5e5e; } /* Annotation */
+code span.at { } /* Attribute */
+code span.bn { color: #ad0000; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007ba5; } /* ControlFlow */
+code span.ch { color: #20794d; } /* Char */
+code span.cn { color: #8f5902; } /* Constant */
+code span.co { color: #5e5e5e; } /* Comment */
+code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+code span.dt { color: #ad0000; } /* DataType */
+code span.dv { color: #ad0000; } /* DecVal */
+code span.er { color: #ad0000; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #ad0000; } /* Float */
+code span.fu { color: #4758ab; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #5e5e5e; } /* Information */
+code span.kw { color: #007ba5; } /* Keyword */
+code span.op { color: #5e5e5e; } /* Operator */
+code span.ot { color: #007ba5; } /* Other */
+code span.pp { color: #ad0000; } /* Preprocessor */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
+code span.ss { color: #20794d; } /* SpecialString */
+code span.st { color: #20794d; } /* String */
+code span.va { color: #111111; } /* Variable */
+code span.vs { color: #20794d; } /* VerbatimString */
+code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+</style>
 
 
   <!--radix_placeholder_meta_tags-->
   <title>⛰️ the mountain man code blog ⛰️: Hi, I'm Zac!</title>
   
-  <meta property="description" itemprop="description" content="I like to code 😀"/>
+  <meta property="description" itemprop="description" content="I like to cook, code, hike, listen to music, woodwork, and my dog winston is a spitting image."/>
   
   <link rel="icon" type="image/vnd.microsoft.icon" href="assets/img/favicon.ico"/>
   
@@ -31,20 +97,20 @@
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
   <meta property="og:title" content="⛰️ the mountain man code blog ⛰️: Hi, I&#39;m Zac!"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="I like to code 😀"/>
+  <meta property="og:description" content="I like to cook, code, hike, listen to music, woodwork, and my dog winston is a spitting image."/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="⛰️ the mountain man code blog ⛰️"/>
   
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
   <meta property="twitter:title" content="⛰️ the mountain man code blog ⛰️: Hi, I&#39;m Zac!"/>
-  <meta property="twitter:description" content="I like to code 😀"/>
+  <meta property="twitter:description" content="I like to cook, code, hike, listen to music, woodwork, and my dog winston is a spitting image."/>
   
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description"]}},"value":[{"type":"character","attributes":{},"value":["Hi, I'm Zac!"]},{"type":"character","attributes":{},"value":["I like to code 😀"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description"]}},"value":[{"type":"character","attributes":{},"value":["Hi, I'm Zac!"]},{"type":"character","attributes":{},"value":["I like to cook, code, hike, listen to music, woodwork, and my dog winston is a spitting image.  "]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2121,7 +2187,7 @@
   
   
   h1,h2,h3,h4,h5,h6{
-    color: var(--dark-silver);
+    color: var(--black);
   }
   
   d-byline h3 {
@@ -2135,8 +2201,60 @@
     text-decoration-color: #ffffff;
   }
   
+  d-article div.sourceCode {
+      background-color: var(--black);
+  }
+  
+  code span.co {
+      color: #9933CC;
+  }
+  
+  code span.va {
+      color: #ffffff;
+  }
+  
+  code span.fu {
+      color: var(--white);
+  }
+  
+  d-article div.sourceCode code, d-article pre code {
+  
+      color: white;
+  }
+  
+  code span.op {
+      color: var(--dark-silver);
+  }
+  
+  code span.cn {
+      color: var(--dark-silver);
+  }
   
   
+  code span.kw {
+      color: var(--blue);
+  }
+  
+  
+  code span.st {
+      color: var(--green);
+  }
+  
+  d-article pre, d-article div.sourceCode, d-article div.sourceCode pre {
+      overflow: auto !important;
+  }
+  
+  .kw a, .fu a {
+      text-decoration: none;
+  }
+  
+  
+  
+  .callout {
+      color: var(--dark-silver);
+      font-size: 2em;
+      margin-bottom: 25px;
+  }
   
   </style>
   <!--/radix_placeholder_site_in_header-->
@@ -2150,7 +2268,7 @@
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Hi, I'm Zac!","description":"I like to code 😀","authors":[]}
+{"title":"Hi, I'm Zac!","description":"I like to cook, code, hike, listen to music, woodwork, and my dog winston is a spitting image.","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2179,7 +2297,7 @@
 <h1>Hi, I’m Zac!</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>I like to code 😀</p></p>
+<p><p>I like to cook, code, hike, listen to music, woodwork, and my dog winston is a spitting image.</p></p>
 </div>
 
 
@@ -2189,6 +2307,7 @@
   <p>Outside of work, I'm a mountain man. I live in Evergreen, Colorado & can usually be found with my pup (winston) up a mountain, woodworking, or coding. I have a degree in finance & led a few non-profits during college. the most successful endeavor, <a href="https://youtu.be/48mSJeCulIk" style="color:#2ebaae;" target="_blank">bears go bald</a>, raised over $60,000 for children's cancer research.</p>
   <p>a sample of my work can be found <a href="https://zacgarland.com/equity-research/" style="color:#2ebaae;"> here</a>.feel free to <a href="https://zacgarland.com/contact" style="color:#2ebaae;">contact me</a> about equity research, data science, or future opportunities. </p></div>
 </div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
