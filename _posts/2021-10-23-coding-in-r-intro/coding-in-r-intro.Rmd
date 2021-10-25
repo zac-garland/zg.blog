@@ -118,7 +118,7 @@ devtools::has_devel()
 # My Blog Post Plan:
 
 
-
+`r glue::glue("Last updated on: {Sys.Date()}")`
 
 ```{r, code_folding}
 zg_blog_pm <- readr::read_csv(here::here("data/blog_post_pm.csv")) %>% 

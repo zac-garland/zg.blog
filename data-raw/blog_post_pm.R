@@ -1,12 +1,12 @@
 ## code to prepare `blog_post_pm` dataset goes here
-
+library(tidyverse)
 
 blog_post_pm <- structure(list(group = c(
   "Workflow (packages & scripts)", "Workflow (packages & scripts)",
   "Workflow (packages & scripts)", "Workflow (packages & scripts)",
   "Data Viz", "Data Viz", "Data Viz", "Data Viz", "Data Viz", "Tidy Data",
-  "Tidy Data", "Tidy Data", "Tidy Data", "Programming (iteration, functional vs OOP)",
-  "Programming (iteration, functional vs OOP)", "Financial Data",
+  "Tidy Data", "Tidy Data", "Tidy Data", "Programming",
+  "Programming", "Financial Data",
   "Financial Data", "Financial Data", "Modeling", "Modeling", "Modeling",
   "Rmarkdown Driven Everything", "Rmarkdown Driven Everything",
   "Rmarkdown Driven Everything", "Rmarkdown Driven Everything",
@@ -30,6 +30,10 @@ blog_post_pm <- structure(list(group = c(
       group == "HTML Widgets" ~ "HTML, CSS, JS",
       TRUE ~ group
     )
+  ) %>%
+  add_row(
+    group = "Programming",
+    package = "tidyeval"
   )
 
 readr::write_csv(blog_post_pm,"data/blog_post_pm.csv")

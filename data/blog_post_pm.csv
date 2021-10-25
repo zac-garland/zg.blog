@@ -12,8 +12,8 @@ Tidy Data,tidyr
 Tidy Data,dplyr
 Tidy Data,lubridate
 Tidy Data,
-"Programming (iteration, functional vs OOP)",purrr
-"Programming (iteration, functional vs OOP)",furrr
+Programming,purrr
+Programming,furrr
 Financial Data,tidyquant
 Financial Data,quantmod
 Financial Data,
@@ -38,3 +38,4 @@ Geospatial,leaflet
 Geospatial,highcharts.Maps
 Geospatial,plotly
 Geospatial,
+Programming,tidyeval
