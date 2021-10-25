@@ -102,6 +102,8 @@ Then, check out my posts when you have time.
 <hr>
 <hr>
 
+# Dev Check
+
 To check that your environment is properly setup to read the rest of my blog posts, please run:
 
 
