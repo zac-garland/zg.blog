@@ -34,6 +34,18 @@ blog_post_pm <- structure(list(group = c(
   add_row(
     group = "Programming",
     package = "tidyeval"
+  ) %>%
+  add_row(
+    group = "Web Scraping / XML",
+    package = "rvest"
+  ) %>%
+  add_row(
+    group = "Web Scraping / XML",
+    package = "xml2"
+  ) %>%
+  add_row(
+    group = "Web Scraping / XML",
+    package = "jsonlite"
   )
 
 readr::write_csv(blog_post_pm,"data/blog_post_pm.csv")

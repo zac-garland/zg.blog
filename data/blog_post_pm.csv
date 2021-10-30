@@ -39,3 +39,6 @@ Geospatial,highcharts.Maps
 Geospatial,plotly
 Geospatial,
 Programming,tidyeval
+Web Scraping / XML,rvest
+Web Scraping / XML,xml2
+Web Scraping / XML,jsonlite
