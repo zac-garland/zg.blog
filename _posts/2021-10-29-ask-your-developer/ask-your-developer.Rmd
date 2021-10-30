@@ -1,0 +1,24 @@
+---
+title: "ask your developer"
+description: |
+  placeholder for book review of ask your developer by Jeff Lawson
+author:
+  - name: Zac Garland
+    url: {}
+date: 2021-10-29
+categories:
+  - Book Reviews
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+placeholder for book review of ask your developer by Jeff Lawson
+
+
+[Ask Your Developer: How to Harness the Power of Software Developers and Win in the 21st Century](https://www.amazon.com/Ask-Your-Developer-Software-Developers/dp/0063018292)

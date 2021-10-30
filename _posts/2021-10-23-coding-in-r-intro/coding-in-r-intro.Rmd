@@ -6,6 +6,8 @@ author:
   - name: Zac Garland
 date: 2021-10-23
 preview: preview.png
+categories:
+  - Open Learning
 output:
   distill::distill_article:
     toc: true
