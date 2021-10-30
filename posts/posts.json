@@ -2,7 +2,7 @@
   {
     "path": "posts/2021-10-29-ask-your-developer/",
     "title": "ask your developer",
-    "description": "A short description of the post.",
+    "description": "placeholder for book review of ask your developer by Jeff Lawson",
     "author": [
       {
         "name": "Zac Garland",
@@ -14,8 +14,8 @@
       "Book Reviews"
     ],
     "contents": "\r\nplaceholder for book review of ask your developer by Jeff Lawson\r\nAsk Your Developer: How to Harness the Power of Software Developers and Win in the 21st Century\r\n\r\n\r\n\r\n",
-    "preview": {},
-    "last_modified": "2021-10-29T20:20:19-06:00",
+    "preview": "posts/2021-10-29-ask-your-developer/preview.jpg",
+    "last_modified": "2021-10-29T20:27:34-06:00",
     "input_file": {}
   },
   {

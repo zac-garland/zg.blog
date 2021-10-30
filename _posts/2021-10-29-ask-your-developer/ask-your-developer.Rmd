@@ -6,6 +6,7 @@ author:
   - name: Zac Garland
     url: {}
 date: 2021-10-29
+preview: preview.jpg
 categories:
   - Book Reviews
 output:
